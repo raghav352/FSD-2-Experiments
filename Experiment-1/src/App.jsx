@@ -1,12 +1,13 @@
-import { useContext } from "react";
-import Login from "./components/Login";
-import Dashboard from "./components/Dashboard";
-import { AuthContext } from "./context/AuthContext";
 
+import './App.css';
+import Login from './Login'
 function App() {
-  const { isLoggedIn } = useContext(AuthContext);
-
-  return <div>{isLoggedIn ? <Dashboard /> : <Login />}</div>;
+  const data = true;
+  return (
+    <div className="App">
+     <Login />
+    </div>
+  );
 }
 
 export default App;
